@@ -5,7 +5,7 @@ ESPECIFICACIONES PROYECTO NRO 36 - Sistema de Gestión de Actividades Clubes Dep
 0.  **Especificar Horarios.**
 1.  **Gestión de socios:** Agregar, modificar, eliminar (Pide permiso de admin).
 2.  **Gestión de Actividades:** Registrar actividad, modificar, eliminar (ej. "Clase de musculación", "Zumba" con cupo límite).
-3.  **Gestión de Reservas:** Agregar Reserva verificando que la actividad tenga cupos disponibles (Lanza ExcepcionCupoMaximo). Modificar y eliminar.
+3.  **Gestión de Reservas:** Agregar Reserva verificando que el cliente no tenga deuda y que la actividad tenga cupos disponibles (Lanza ExcepcionCupoMaximo). Modificar y eliminar.
 4.  **Reportes y filtros:** Listar socios por rut y listar eventos de manera cronológica.
 
 ## Estructura de Datos y Clases (Modelo MVC):
@@ -44,7 +44,7 @@ Proyecto-SIA-Progra-Avanzada/
 |
 |----excepciones/
 |     |--ExcepcionCupoMaximo.java (Detiene ejecución si no hay cupo)
-|     |--ExcepcionMorosidad.java  (Detiene ejecución si hay deuda) Eliminar a futuro 
+|     |--ExcepcionMorosidad.java  (Detiene ejecución si hay deuda) 
 |
 |----controlador/
 |     |--SistemaClub.java (Lógica de negocio pura, sin impresiones)
