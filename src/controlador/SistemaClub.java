@@ -40,6 +40,33 @@ public class SistemaClub {
 		//...
 	}
 	
+	public boolean cancelarReserva(String rut, int idActividad) {
+		//...
+	}
+	
+	public void purgarMorosos() {
+		//...
+	}
+	
+	public void cargarDatosIniciales() {
+		//...
+	}
+	
+	public ArrayList<Actividad> getActividades(){
+		//...
+	}
+	
+	public HashMap<String, Socio> getSocios(){
+		//...
+	}
+	
+	
+	
+	
+	
+	
+	
+	
 	// Método getter para obtener las actividades dentro del ArrayList<Actividad>
 	public ArrayList<Actividad> getActividades() {
 		//...
