@@ -108,8 +108,16 @@ public class SistemaClub {
 	}
 	
 	
-	public boolean cancelarReserva(String rut, int idActividad) {
-		//...
+	public boolean cancelarReserva(String rut, String idActividad) {
+		for (int i = 0; i < this.actividades.size(); i++) {
+			Actividad actividadActual = this.actividades.get(i);
+			
+			if (actividadActual.getIdActividad().equals(idActividad)) {
+				return actividadActual.eliminarReserva(rut);
+			}
+		}
+		
+		return false;
 	}
 	
 	public void purgarMorosos() {
