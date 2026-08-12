@@ -6,7 +6,7 @@ import modelo.Socio;
 
 import java.util.ArrayList;
 
-
+// Esta clase se comporta como data handler
 public class SistemaClub {
 
 	// Primera instancia de atributo de SistemaClub - HashMap de Socio
@@ -86,6 +86,7 @@ public class SistemaClub {
 		if (actividadActual.getReservas().size() >= actividadActual.getCupoMaximo()) {
 			throw new ExcepcionCupoMaximo("La actividad: " + actividadActual.getNombre() + "no tiene cupos disponibles.")
 		}
+		
 		
 		return true;
 	}
